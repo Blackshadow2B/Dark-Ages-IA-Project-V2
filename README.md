@@ -21,9 +21,9 @@ so before you start, see the table below and see what actions require what, and 
 
 | Action | Prerequisite | References / URL |
 | :--- | :--- | :--- |
-| Build and Compile Hades | Visual Studio 2019 | [Download](https://www.visualstudio.com/downloads/) |
-| Build and Compile Hades | .NET 5.0.1 SDK | [Download](https://dotnet.microsoft.com/download/dotnet/5.0) |
-| Running the Server | .NET 5.0.1 Runtime | [Download](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-5.0.1-windows-x64-install) |
+| Build and Compile Hades | Visual Studio 2022 | [Download](https://www.visualstudio.com/downloads/) |
+| Build and Compile Hades | .NET 8.0 SDK | [Download](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) |
+| Running the Server | .NET 8.0 Runtime | [Download](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) |
 | Hades Client | .NET Framework 4.7.2 Developer pack | [Download](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer) |
 | Hades World Editor | .NET Framework 4.7.2 Developer pack | [Download](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer) |
 
@@ -39,6 +39,13 @@ so before you start, see the table below and see what actions require what, and 
 You will also need to download a client. [Download the game client](https://drive.google.com/file/d/1VtnTcGivQ1P89bocQTO1LkwCDB4hvx8A/view?usp=sharing)
 
 ## Setting up the Game Server 
+
+### Important Security Configuration
+> **Warning**
+> Before running a public server, you **must** review and change the default configuration to secure your server.
+
+*   **Change Default Admin Accounts:** The default configuration file (`LoruleConfig.json`) contains a list of default game masters (`"GameMasters": [ "wren", "lol" ]`). These must be removed or changed to prevent unauthorized admin access.
+*   **Update File Paths:** The default configuration contains file paths specific to the original developer's computer. You must update the `Location` paths under the `"Content"` and `"Editor"` sections to point to the correct locations on your own system.
 
 * Download and Install Hades  [Download](https://github.com/wren11/Dark-Ages-Private-Server/releases/tag/e121eac) \(Release\) 
 * Download both [database.zip](https://github.com/wren11/Dark-Ages-Private-Server/releases/download/e121eac/database.zip) And [Lorule.GameServer.zip](https://github.com/wren11/Dark-Ages-Private-Server/releases/download/e121eac/Lorule.GameServer.zip) from the project's **GitHub** Page [here.](https://github.com/wren11/Dark-Ages-Private-Server/releases/tag/e121eac) 
