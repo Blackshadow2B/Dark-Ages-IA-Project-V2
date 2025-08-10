@@ -1,12 +1,12 @@
 {
 	// Locales
 	"Content": {
-		"Location": "C:\\Users\\Dean\\Documents\\GitHub\\DarkAges-Lorule-Server\\database\\server",
+		"Location": "../../database/server",
 		"ServerIP": "127.0.0.1"
 	},
 	"Editor": {
-		"Location": "C:\\Users\\Dean\\Documents\\GitHub\\DarkAges-Lorule-Server\\database",
-		"GameLocation": "C:\\Users\\Dean\\Documents\\GitHub\\DarkAges-Lorule-Server\\game"
+		"Location": "../../database",
+		"GameLocation": "../../game"
 	},
 
 
